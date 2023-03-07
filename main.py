@@ -6,7 +6,7 @@ def avengers(heros, v):
     marvel = [False] * (v+1)
     #BASE CASE:
     marvel[0] = True
-    #RECURSIVE CASE: we each here we go marvel[hero] to marvel[V]
+    #RECURSIVE CASE: we go marvel[hero] to marvel[V]
     for hero in heros: 
         for i in range(hero, v+1):
             if (marvel[i]) > v:
