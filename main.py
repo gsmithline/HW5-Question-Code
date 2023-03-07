@@ -9,8 +9,8 @@ def avengers(heros, v):
     #RECURSIVE CASE: we go marvel[hero] to marvel[V]
     for hero in heros: 
         for i in range(hero, v+1):
-            if (marvel[i]) > v:
-                break
+            #if (marvel[i]) > v:
+                #break
             if (marvel[i] == True):
                 continue
             elif (marvel[i-hero] == True):
