@@ -1,15 +1,17 @@
 class HW:  
-    
+#This only is correct for all non-negative integers
     def Q1(a):
-        #BASE
-        H = 0
-        M = H
-        #"RECURSIVE CASE"
-        for i in a:
+        #Base Case:
+        #Total Sum which is current continuous sum 
+        H = max(0, a[0])
+        # Maximal Sum
+        M = max(0, H)
+        #Recursive cases:
+        for i in a[1:]:
             H = max(0, H+i)
             M = max(H, M); 
         return M
-    #This only is correct for all non-negative integers
+            
     def Q3(heros, v):
         #If we have 1 we can compute any value, but might bot makes sense as O(n) to do this
         if (1 in heros or v == 0): return True
