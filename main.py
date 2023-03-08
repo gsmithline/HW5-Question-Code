@@ -1,5 +1,5 @@
 class HW:  
-#This only is correct for all non-negative integers
+    #Question only asks for largest value of maximal sum in continuous subarray not the actual bounds of the sub array
     def Q1(a):
         #Base Case:
         #Total Sum which is current continuous sum 
@@ -11,7 +11,7 @@ class HW:
             H = max(0, H+i)
             M = max(H, M); 
         return M
-            
+     #This only is correct for all non-negative integers
     def Q3(heros, v):
         #If we have 1 we can compute any value, but might bot makes sense as O(n) to do this
         if (1 in heros or v == 0): return True
