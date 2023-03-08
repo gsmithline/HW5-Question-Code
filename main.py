@@ -14,6 +14,7 @@ class HW:
      #This only is correct for all non-negative integers
     def Q3(heros, v):
         #If we have 1 we can compute any value, but might bot makes sense as O(n) to do this
+        #This line was not part of my algorithm and it can be commented
         if (1 in heros or v == 0): return True
         #CREATE ARRAY FOR MEMOIZATION
         marvel = [False] * (v+1)
